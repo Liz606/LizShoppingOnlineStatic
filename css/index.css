@@ -1,0 +1,173 @@
+
+#header div:nth-child(2){/*登陆，注册（我的购物车）*/
+	float:left;
+	padding: 5% 0;
+	width: 77%;
+	}
+#header li{
+	float:right;
+	margin-right:5px;
+}
+#textbox{
+	display: block;
+}
+#header li a{
+	display: block;/*形成外联。块。同行罗列*/
+	box-shadow: inset 0 -3px 18px rgba(0,0,0,0.4);/*a为控制透明度的参数，box-shadow 属性向框添加一个或多个阴影。该属性是由逗号分隔的阴影列表，每个阴影由 2-4 个长度值、可选的颜色值以及可选的 inset 关键词来规定。*/
+	background-color: #FF8000;
+	font-size: 16px;
+	line-height: 1.8em;
+	width: 92px;
+	font-family: fantasy;
+}
+#header li a:hover{
+	position: relative;/*相对定位，相对于窗口*/
+	top:-3;
+	left:-3;
+	box-shadow:3px 3px 1px rgba(0,0,0,0.5);
+}
+#nav{/*服装分类框体*/
+	height:250px;
+	background:url(../images/a.jpg);
+	font-size:0;
+	}
+#nav ul{
+	display:inline-block;/*。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。*/
+	width: 100%;
+}
+#nav li{
+	width: 110px;
+	margin-left: 31px;
+	margin-bottom:31px;
+	float: left;
+	height: 110px;
+	overflow:hidden;/*overflow 属性规定当内容溢出元素框时发生的事情内容会被修剪，并且其余内容是不可见的。用来隐藏滚动条中其他两个图片*/
+	background:url('../images/15.png') no-repeat center;
+	background-size:cover;/*限制图片在盒子里等比显示·························*/
+	transition:all 0.3s;/*延迟*/
+
+}
+    #nav ul:nth-child(1) li:nth-child(1){
+	background:url(../images/001.png) no-repeat center;
+	background-size:cover;/*限制图片在盒子里等比显示·························*/}
+	#nav ul:nth-child(1) li:nth-child(2){
+	background:url(../images/002.png) no-repeat center;
+	background-size:cover;/*限制图片在盒子里等比显示·························*/}
+	#nav ul:nth-child(1) li:nth-child(3){
+	background:url(../images/007.png) no-repeat center;
+	background-size:cover;/*限制图片在盒子里等比显示·························*/}
+	#nav ul:nth-child(1) li:nth-child(4){
+	background:url(../images/006.png) no-repeat center;
+	background-size:cover;/*限制图片在盒子里等比显示·························*/}
+	#nav ul:nth-child(1) li:nth-child(5){
+	background:url(../images/003.png) no-repeat center;
+	background-size:cover;/*限制图片在盒子里等比显示·························*/}
+	#nav ul:nth-child(1) li:nth-child(6){
+	background:url(../images/010.png) no-repeat center;
+	background-size:cover;/*限制图片在盒子里等比显示·························*/}
+	#nav ul:nth-child(2) li:nth-child(1){
+	background:url(../images/009.png) no-repeat center;
+	background-size:cover;/*限制图片在盒子里等比显示·························*/}
+	#nav ul:nth-child(2) li:nth-child(2){
+	background:url(../images/008.png) no-repeat center;
+	background-size:cover;/*限制图片在盒子里等比显示·························*/}
+	#nav ul:nth-child(2) li:nth-child(3){
+	background:url(../images/005.png) no-repeat center;
+	background-size:cover;/*限制图片在盒子里等比显示·························*/}
+	#nav ul:nth-child(2) li:nth-child(4){
+	background:url(../images/004.png) no-repeat center;
+	background-size:cover;/*限制图片在盒子里等比显示·························*/}
+	#nav ul:nth-child(2) li:nth-child(5){
+	background:url(../images/011.png) no-repeat center;
+	background-size:cover;/*限制图片在盒子里等比显示·························*/}
+	#nav ul:nth-child(2) li:nth-child(6){
+	background:url(../images/012.png) no-repeat center;
+	background-size:cover;/*限制图片在盒子里等比显示·························*/}
+#nav li:hover img{
+	opacity:0.5;
+}
+#nav li:hover{
+	-webkit-transform:scale(1.2,1.2);
+}
+#content{
+	display:inline-block;
+	width:100%;
+}
+#content>div:first-child{
+	float:left;
+	width:300px;
+	padding:10px 10px 20px 10px;
+	border:1px solid #BFBFBF;
+	background-color:white;
+	/* Add box-shadow */
+	box-shadow:2px 2px 3px #aaaaaa;
+
+	-ms-transform:rotate(7deg); /* IE 9 */
+    -moz-transform:rotate(7deg); /* Firefox */
+    -webkit-transform:rotate(7deg); /* Safari and Chrome */
+    -o-transform:rotate(7deg); /* Opera */
+    transform:rotate(7deg);
+
+}
+#content>div:nth-child(2){
+	width:500px;
+	float:left;
+	padding:10px 10px 20px 10px;
+	border:1px solid #BFBFBF;
+	background-color:white;
+	/* Add box-shadow */
+	box-shadow:2px 2px 3px #aaaaaa;
+	float:left;
+	-ms-transform:rotate(-8deg); /* IE 9 */
+	-moz-transform:rotate(-8deg); /* Firefox */
+	-webkit-transform:rotate(-8deg); /* Safari and Chrome */
+	-o-transform:rotate(-8deg); /* Opera */
+	transform:rotate(-8deg);
+	}
+#newClothes h1{
+	margin: 10px 0;
+	font-size:16px;
+	font-weight: bold;
+}
+#newClothes p{
+	font-weight:bold;
+}
+
+
+/*animation*/
+@-webkit-keyframes logo-ani{
+	from{
+		-webkit-transform:translate(-500px,0);/*起始位置坐标*/
+		opacity: 0;
+	}to{
+		-webkit-transform:translate(0,0);
+		opacity: 1;/*透明度*/
+	}
+}
+@-moz-keyframes logo-ani{
+	from{
+		-moz-transform:translate(-500px,0);
+		opacity: 0;
+	}to{
+		-moz-transform:translate(0,0);
+		opacity: 1;
+	}
+}
+path {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  -webkit-animation: dash 10s linear infinite;
+  -moz-animation: dash 10s linear infinite;
+  -webkit-transform:scale(1.2,1.2);/*等比放大*/
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}	

@@ -1,0 +1,152 @@
+/* CSS Document */
+/*reset*/
+body,ul,li,p,h1,h2,h3,a,legend{
+	padding:0;
+	margin:0;
+	font:normal 12px/24px "微软雅黑";
+	color:#272822    
+}
+ul,li{list-style-type: none}
+a{text-decoration:none;}
+/*以上皆为初始化，养成良好的编程习惯*/
+
+@font-face{/*载入自己的字体*/
+   font-family:GoodDog;
+   src:url('../font/GoodDog.otf');
+}
+body{
+   	background:#FFFFFF;
+   	text-align: center;
+}
+/*base*/
+.line{
+	padding:40px;
+}
+
+#container{  /*主框体*/
+	width:960px;
+	margin:0 auto;
+
+}
+#header{/*顶部*/
+    margin:0px;
+	padding:0px;
+	width:100%;
+	display:inline-block;
+	background:url(../images/h.jpg);
+}
+#header div:nth-child(1){/*品牌名*/
+    float:left;
+	padding: 5% 3%;
+	font-family:'GoodDog';
+	font-size: 130px;
+	width:17%;
+	}
+#header div:nth-child(1) span:nth-child(1){/*css动画代码，-webkit-animation兼容谷歌-moz-animation兼容火狐，logo-ani动画函数名，1.5s动画运行时长，cubic-bezier(.63,.21,.35,1.89)源自网络的速度控制函数，both···*/
+		-webkit-animation:logo-ani 1.5s cubic-bezier(.63,.21,.35,1.89) both;
+	-moz-animation:logo-ani 1.5s cubic-bezier(.63,.21,.35,1.89) both;
+}
+#header div:nth-child(1) span:nth-child(2){
+		-webkit-animation:logo-ani 1.5s cubic-bezier(.63,.21,.35,1.89) 0.2s both;
+	-moz-animation:logo-ani 1.5s cubic-bezier(.63,.21,.35,1.89) 0.2s both;
+}
+#header div:nth-child(1) span:nth-child(3){
+		-webkit-animation:logo-ani 1.5s cubic-bezier(.63,.21,.35,1.89) 0.4s both;
+	-moz-animation:logo-ani 1.5s cubic-bezier(.63,.21,.35,1.89) 0.4s both;
+}
+#header div:nth-child(2){/*登陆，注册（我的购物车）*/
+	float:left;
+	padding: 5% 0;
+	width: 77%;
+	}
+#header li{
+	float:right;
+	margin-right:5px;
+}
+#header li a{
+	display: block;/*形成外联。块。同行罗列*/
+	box-shadow: inset 0 -3px 18px rgba(0,0,0,0.4);/*a为控制透明度的参数，box-shadow 属性向框添加一个或多个阴影。该属性是由逗号分隔的阴影列表，每个阴影由 2-4 个长度值、可选的颜色值以及可选的 inset 关键词来规定。*/
+	background-color: #FF8000;
+	font-size: 16px;
+	line-height: 1.8em;
+	width: 92px;
+	font-family: fantasy;
+}
+#header li a:hover{
+	position: relative;/*相对定位，相对于窗口*/
+	top:-3;
+	left:-3;
+	box-shadow:3px 3px 1px rgba(0,0,0,0.5);
+}
+
+#slider{
+	position: relative;
+	 overflow:hidden; 
+}
+#slider ul {
+	width:500%;
+	display:inline-block;
+	position:relative;
+	top:0;
+	transition:all 0.5s linear;
+}
+#slider ul  li{
+	width:20%;
+	float:left;
+	line-height: 0;
+}
+#slider .arrow-l,#slider .arrow-r{
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 90px;
+	top: 268px;
+	font-size: 60px;
+	line-height: 90px;
+	font-weight: bold;
+	background: rgba(255,255,255,0.5);
+	color:#000;
+	cursor:pointer;
+	-webkit-user-select: none;
+}
+#slider .arrow-l{
+	left:20px;
+}
+#slider .arrow-r{
+	right:20px;
+}
+#slider .arrow-l:hover,#slider .arrow-r:hover{
+	color: #fff;
+	background: rgba(0,0,0,0.3);
+}
+#footer{/*底部，公司信息，关注我们*/
+  height:50px;
+  background:url(../images/h.jpg);
+}
+li{ list-style:none;}
+.rolinList{width:20%; margin:0px auto 0 auto; text-align:center;float:left;}
+.rolinList li{margin-bottom:1px;background:#CCC;width:100%;}
+.rolinList li h2{ width:100%; height:40px;  background:#fff; font-size:14px; line-height:40px;  color:#333; cursor:pointer;float: left;}
+.content{ height:78px;width:100%;  background:#fff;  background:#FAFAFA}
+/*animation*/
+#nav1-right li:hover{
+	-webkit-transform:scale(1.2,1.2);
+}
+@-webkit-keyframes logo-ani{
+	from{
+		-webkit-transform:translate(-500px,0);/*起始位置坐标*/
+		opacity: 0;
+	}to{
+		-webkit-transform:translate(0,0);
+		opacity: 1;/*透明度*/
+	}
+}
+@-moz-keyframes logo-ani{
+	from{
+		-moz-transform:translate(-500px,0);
+		opacity: 0;
+	}to{
+		-moz-transform:translate(0,0);
+		opacity: 1;
+	}
+}
